@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.ibb.co/qpxpGmC/image.jpg" alt="Jisshu-Auto-filter">
+  <img src="https://files.catbox.moe/vq2ztz.jpg" alt="Princess-Auto-filter">
 </p>
 <h1 align="center">
   <a href="https://telegram.me/JISSHU_BOTS">Movie/Auto Filter Bot</a>
