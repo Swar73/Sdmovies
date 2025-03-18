@@ -265,17 +265,17 @@ async def start(client:Client, message):
 
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('☆ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ☆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
+                            InlineKeyboardButton('☆ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ☆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
                         ],[
-                            InlineKeyboardButton("Hᴇʟᴘ ⚙️", callback_data='admincmd'),
-                            InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
-                        ],[
-                            InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='seeplans'),
-                            InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
+                            InlineKeyboardButton('Mᴏᴠɪᴇ ɢʀᴏᴜᴘ🎬', url='https://t.me/Ssmoivegroup'),
+                            InlineKeyboardButton('Uᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ📢', url='https://t.me/THORUPDATE')
                         ],[
                             InlineKeyboardButton('Mᴏsᴛ Sᴇᴀʀᴄʜ 🔍', callback_data="mostsearch"),
                             InlineKeyboardButton('Tᴏᴘ Tʀᴇɴᴅɪɴɢ ⚡', callback_data="trending")
-                        ]] 
+                        ],[
+                            InlineKeyboardButton("Hᴇʟᴘ ⚙️", url='@The_Sawan'),
+                            InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
+                        ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         return await message.reply_photo(photo=START_IMG, caption=script.START_TXT.format(message.from_user.mention, get_status(), message.from_user.id),
             reply_markup=reply_markup,
